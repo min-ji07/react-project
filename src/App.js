@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 import CleanUp from "./CleanUp";
 import Todo from "./Todo";
 import Coin from "./Coin";
+import Movie from "./Movie";
 
 function App() {
   // console.log("state 변경 / 리렌더링");
@@ -50,6 +51,7 @@ function App() {
       <CleanUp/>
       <Todo/>
       <Coin/>
+      <Movie/>
     </div>
   );
 }

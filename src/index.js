@@ -6,8 +6,8 @@ import App from './App';
 // div id root(index.html) 에 화면 만들 준비를 함
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <App />
-  </React.StrictMode>
+  // </React.StrictMode>
 );
 

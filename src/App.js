@@ -5,9 +5,12 @@ import styles from "./App.module.css";
 import { useState, useEffect } from "react";
 // 해당 파일내에서 다른 파일과 겹치는 클래스명을 사용해도 괜찮음
 // html에서 랜덤 className으로 보여줄 것이기 때문에
+import CleanUp from "./CleanUp";
+import Todo from "./Todo";
+import Coin from "./Coin";
 
 function App() {
-  console.log("state 변경 / 리렌더링");
+  // console.log("state 변경 / 리렌더링");
   const [counter, setValue] = useState(0);
   const [keyword, setKeyword] = useState("");
   const onClick = () => setValue((prev) => prev + 1);
@@ -18,7 +21,7 @@ function App() {
     // useEffect(iRunOnlyOne, []);
     // 아래 코드와 같음
   useEffect(() => {
-    console.log("useEffect 안에 넣으면 한번만 실행")
+    console.log("useEffect 안에 넣으면 한번만 실행");
   }, []);
   // 근데 신기하게 뒤에 배열을 안넣어주니까 똑같이 계속 나옴 뭘까 -->
   // 아무것도 없는 배열을 넣었을 때 한번만 실행되는 것은
@@ -27,9 +30,12 @@ function App() {
     if(keyword !== "" && keyword.length > 5){
       console.log("search for", keyword);
     }
-  }, [keyword])
+  }, [keyword]);
   // 원하는 요소가 변화했을 때 실행시키고 싶다면 [] 안에 넣어줌
   // keyword가 변화할 때 코드 실행시켜줘
+  useEffect(() => {
+    console.log("counter 변경 시 실행");
+  }, [counter]);
   return (
     <div className="App">
       <input
@@ -41,11 +47,9 @@ function App() {
       <h1 className={styles.title}>New React Project!</h1>
       <p>{counter}</p>
       <button onClick={onClick}>클릭하세요!</button>
-
-
-      <div>
-        <Button text="아무것도 없는 버튼!"/>  
-      </div>
+      <CleanUp/>
+      <Todo/>
+      <Coin/>
     </div>
   );
 }

@@ -78,6 +78,7 @@ function Home(){
           <Movie
               // key는 React 내 map 메소드 안에서 component를 render할 때 사용! 필수
               key={banana.id}
+              id={banana.id}
               // 속성 이름 다르면 안 나오거나 오류 날 수 있음
               coverImg={banana.medium_cover_image}
               title={banana.title}

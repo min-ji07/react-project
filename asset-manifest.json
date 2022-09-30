@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "https://min-ji07.github.io/react-project/static/css/main.84a410dd.css",
-    "main.js": "https://min-ji07.github.io/react-project/static/js/main.a8c4fe5b.js",
-    "index.html": "https://min-ji07.github.io/react-project/index.html",
-    "main.84a410dd.css.map": "https://min-ji07.github.io/react-project/static/css/main.84a410dd.css.map",
-    "main.a8c4fe5b.js.map": "https://min-ji07.github.io/react-project/static/js/main.a8c4fe5b.js.map"
+    "main.css": "/react-project/static/css/main.84a410dd.css",
+    "main.js": "/react-project/static/js/main.a8c4fe5b.js",
+    "index.html": "/react-project/index.html",
+    "main.84a410dd.css.map": "/react-project/static/css/main.84a410dd.css.map",
+    "main.a8c4fe5b.js.map": "/react-project/static/js/main.a8c4fe5b.js.map"
   },
   "entrypoints": [
     "static/css/main.84a410dd.css",

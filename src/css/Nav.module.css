@@ -1,0 +1,9 @@
+.nav_wrap{
+    position: fixed;
+    top: 0;
+    right: 0;
+    border: 1px solid black;
+    width: 200px;
+    height: 100%;
+    background: white;
+}

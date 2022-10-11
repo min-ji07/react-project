@@ -1,5 +1,6 @@
 import Proptypes from "prop-types";
-import styles from "./Button.module.css";
+// import styles from "./Button.module.css";
+import styles from "./css/Button.module.css"
 // javascript object로 변환 시켜줌
 
 function Button({text}){
